@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
+    'modular_monolith.accounts',
+    'modular_monolith.accounts.accounts_customers',
+    'modular_monolith.accounts.accounts_retailers',
+    'modular_monolith.core',
 ]
 
 MIDDLEWARE = [
@@ -49,7 +54,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "django_modular_monolith.urls"
+ROOT_URLCONF = "config.urls"
 
 TEMPLATES = [
     {
@@ -67,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "django_modular_monolith.wsgi.application"
+WSGI_APPLICATION = "config.wsgi.application"
 
 
 # Database
